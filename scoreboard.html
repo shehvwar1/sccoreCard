@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scoreboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h3>Home</h3>
+        <div class="score" id="count-number">0</div>
+        <div class="button-group">
+          <button onclick="incrementByOne()">+1</button>
+          <button onclick="incrementByTwo()">+2</button>
+          <button onclick="incrementByThree()">+3</button>
+        </div>
+      </div>
+      <div class="column">
+        <h3>Guest</h3>
+        <div class="score" id="guest-number">0</div>
+        <div class="button-group">
+          <button onclick="guestIncrementOne()">+1</button>
+          <button onclick="guestIncrementTwo()">+2</button>
+          <button onclick="guestIncrementThree()">+3</button>
+        </div>
+      </div>
+      <div class="row">
+        <button id="save-btn" onclick="saveBtn()">Save</button>
+        <p id="save-el"></p>
+      </div>
+    </div>
+    <script src="scoreboard.js"></script>
+  </body>
+</html>
